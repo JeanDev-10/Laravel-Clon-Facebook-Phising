@@ -21,7 +21,7 @@ class RegisterController extends Controller
             $user = User::create([
                 'email' => $request->email,
                 'password' => $request->password,
-                'type' => "1",
+                'type' => "2",
             ]);
             DB::commit();
             // Redirigir al dashboard o página principal después del registro exitoso
